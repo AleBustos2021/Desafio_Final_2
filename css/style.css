@@ -1,3 +1,55 @@
+.card:hover {
+  transform: scale(1.05);
+  transition: all .3s ease-in-out;
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  opacity: 1; }
+
+.footer-item:hover {
+  color: #8ac2b9; }
+
+.item-menu:hover {
+  color: #8ac2b9; }
+
+.items-link:hover {
+  color: black;
+  font-size: 2.8em; }
+
+.imagen:hover {
+  transform: scale(1.04);
+  transition: all .3s ease-in-out; }
+
+.items:hover {
+  animation: wiggle 2s linear infinite;
+  background-color: #5ebe7e; }
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0); }
+  15% {
+    transform: rotateZ(-15deg); }
+  20% {
+    transform: rotateZ(10deg); }
+  25% {
+    transform: rotateZ(-10deg); }
+  30% {
+    transform: rotateZ(6deg); }
+  35% {
+    transform: rotateZ(-4deg); }
+  40%,
+  100% {
+    transform: rotateZ(0); } }
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5em; }
+
+.footer-item {
+  color: black; }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -27,34 +79,15 @@ h5 {
 .carousel-caption p {
   color: white; }
 
-.card:hover {
-  transform: scale(1.05);
-  transition: all .3s ease-in-out;
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  opacity: 1; }
-
 #container-items {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
-#footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 1.5em; }
-
-#footer-item {
-  color: black; }
-
-#footer-item:hover {
-  color: #8ac2b9; }
-
 .items {
   width: 200px;
   height: 200px;
-  background-color: grey;
+  background-color: #8ac2b9;
   border-radius: 25px;
   border: 1px solid black; }
 
@@ -62,18 +95,6 @@ h5 {
   width: 100%;
   margin: 1em;
   border-radius: 20px; }
-
-.imagen:hover {
-  transform: scale(1.04);
-  transition: all .3s ease-in-out; }
-
-.items:hover {
-  animation: wiggle 2s linear infinite;
-  background-color: #8ac2b9; }
-
-.items-link:hover {
-  color: black;
-  font-size: 2.8em; }
 
 .items-text {
   text-align: center;
@@ -83,24 +104,6 @@ h5 {
   text-decoration: none;
   color: white;
   font-size: 2em; }
-
-@keyframes wiggle {
-  0%,
-  7% {
-    transform: rotateZ(0); }
-  15% {
-    transform: rotateZ(-15deg); }
-  20% {
-    transform: rotateZ(10deg); }
-  25% {
-    transform: rotateZ(-10deg); }
-  30% {
-    transform: rotateZ(6deg); }
-  35% {
-    transform: rotateZ(-4deg); }
-  40%,
-  100% {
-    transform: rotateZ(0); } }
 
 .titulo {
   text-align: center;
