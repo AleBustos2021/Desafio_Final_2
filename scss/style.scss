@@ -1,5 +1,9 @@
+$color-base:  rgb(164, 224, 214);
+
 @import "animations";
 @import "navs";
+
+
 
 body {
     margin: 0px;
@@ -46,7 +50,7 @@ h5 {
 .items {
     width: 200px;
     height: 200px;
-    background-color: rgb(138, 194, 185);
+    background-color: $color-base;
     border-radius: 25px;
     border: 1px solid black;
 }
@@ -66,6 +70,26 @@ h5 {
     text-decoration: none;
     color: white;
     font-size: 2em;
+}
+
+.form_contact{
+    border-radius: 10px;
+    padding: 3em;
+    margin: auto;
+    width: 70%;
+    background-color: $color-base;
+    border: 1px solid black;
+}
+
+.form-control{
+    border: 1px solid black;
+    margin: 1em;
+}
+
+.btn{
+color: black;
+background-color: $color-base;
+border: 1px solid black;
 }
 
 .titulo {
@@ -132,5 +156,8 @@ h5 {
     .container{
         display: flex;
         flex-direction: column;
+    }
+    .card-text{
+        display: none;
     }
 }

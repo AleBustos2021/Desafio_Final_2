@@ -9,16 +9,11 @@
 }
 
 .footer-item:hover {
-  color: #8ac2b9;
+  color: #a4e0d6;
 }
 
 .item-menu:hover {
-  color: #8ac2b9;
-}
-
-.items-link:hover {
-  color: black;
-  font-size: 2.8em;
+  color: #a4e0d6;
 }
 
 .imagen:hover {
@@ -28,10 +23,20 @@
   transition: all .3s ease-in-out;
 }
 
+.btn:hover {
+  background-color: black;
+  border: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: white;
+}
+
 .items:hover {
   -webkit-animation: wiggle 2s linear infinite;
           animation: wiggle 2s linear infinite;
-  background-color: #5ebe7e;
+  background-color: black;
+  color: #a4e0d6;
+  font-size: 1.1em;
 }
 
 @-webkit-keyframes wiggle {
@@ -117,6 +122,10 @@
   color: black;
 }
 
+.item-menu, .nav-item {
+  color: black;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -171,7 +180,7 @@ h5 {
 .items {
   width: 200px;
   height: 200px;
-  background-color: #8ac2b9;
+  background-color: #a4e0d6;
   border-radius: 25px;
   border: 1px solid black;
 }
@@ -191,6 +200,26 @@ h5 {
   text-decoration: none;
   color: white;
   font-size: 2em;
+}
+
+.form_contact {
+  border-radius: 10px;
+  padding: 3em;
+  margin: auto;
+  width: 70%;
+  background-color: #a4e0d6;
+  border: 1px solid black;
+}
+
+.form-control {
+  border: 1px solid black;
+  margin: 1em;
+}
+
+.btn {
+  color: black;
+  background-color: #a4e0d6;
+  border: 1px solid black;
 }
 
 .titulo {
@@ -244,6 +273,9 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .card-text {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

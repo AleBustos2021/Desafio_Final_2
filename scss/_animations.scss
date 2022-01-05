@@ -7,27 +7,36 @@
 }
 
 .footer-item:hover {
-    color: rgb(138, 194, 185);
-}
-.item-menu:hover{
-    color: rgb(138, 194, 185);
+    color: $color-base;
 }
 
-.items-link:hover {
-    color: black;
-    font-size: 2.8em;
+.item-menu:hover {
+    color: $color-base;
 }
+
+// .items-link:hover {
+//     color: $color-base;
+//     font-size: 2.8em;
+// }
 
 .imagen:hover {
     transform: scale(1.04);
     transition: all .3s ease-in-out;
+}
 
+.btn:hover {
+    background-color: black;
+    border: none;
+    transition: all .3s ease-in-out;
+    color: white;
 }
 
 .items:hover {
     animation: wiggle 2s linear infinite;
-    background-color: rgb(94, 190, 126);
-
+    background-color: black;
+    color: $color-base;
+    font-size: 1.1em;
+    
 }
 
 @keyframes wiggle {
