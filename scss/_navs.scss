@@ -1,13 +1,23 @@
-#footer {
+#barra-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.5em;
 }
 
-.footer-item {
-    color: black;
+#barra-sup, #barra-footer {
+    background-color: $color-base-2;
+    font-size: 2em;
+
+    .item-menu {
+        color: white;
+    }
 }
-.item-menu, .nav-item{
-    color: black;
+
+#barra-sup {
+     border-bottom: 2px solid $color-base;
+ }
+
+#barra-footer {
+    border-top: 2px solid $color-base;
 }

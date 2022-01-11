@@ -1,9 +1,12 @@
-$color-base:  rgb(164, 224, 214);
+$color-base: rgb(164, 224, 214);
+$color-base-2: black;
 
 @import "animations";
 @import "navs";
 
-
+@mixin gradiente {
+    background: linear-gradient(to bottom, $color-base, white);
+}
 
 body {
     margin: 0px;
@@ -28,8 +31,9 @@ h5 {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid $color-base-2;
     opacity: 0.6;
+    width: 23%;
 }
 
 .separador {
@@ -45,14 +49,14 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 
 .items {
-    width: 200px;
-    height: 200px;
-    background-color: $color-base;
+    width: 20em;
+    height: 20em;
     border-radius: 25px;
-    border: 1px solid black;
+    @include gradiente;
 }
 
 .imagen {
@@ -66,30 +70,36 @@ h5 {
     margin: 30px;
 }
 
+.submit {
+    text-align: right;
+}
+
 .items-link {
     text-decoration: none;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
-.form_contact{
+.form_contact {
     border-radius: 10px;
     padding: 3em;
     margin: auto;
     width: 70%;
-    background-color: $color-base;
-    border: 1px solid black;
+    border: 1px solid $color-base-2;
+    @include gradiente;
+    
 }
 
-.form-control{
-    border: 1px solid black;
+.form-control {
+    border: 1px solid $color-base-2;
     margin: 1em;
 }
 
-.btn{
-color: black;
-background-color: $color-base;
-border: 1px solid black;
+.btn {
+    color: black;
+    background-color: $color-base;
+    border: 1px solid $color-base-2;
+    text-align: right;
 }
 
 .titulo {
@@ -144,20 +154,43 @@ border: 1px solid black;
         margin: 0.8em;
     }
 
-    #footer {
+    #barra-footer {
         display: flex;
         flex-direction: column;
     }
 
     .titulo {
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
-    .card-text{
+
+    .card-text {
         display: none;
     }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin: 2em;
+
+    }
+
 }

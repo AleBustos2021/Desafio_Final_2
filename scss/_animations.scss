@@ -4,20 +4,23 @@
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     opacity: 1;
+    border: 1px solid $color-base;
 }
 
-.footer-item:hover {
+#barra-footer {
+    .item-menu:hover {
     color: $color-base;
+    }
+}
+
+#barra-sup {
+    .item-menu:hover {
+    color: $color-base;}
 }
 
 .item-menu:hover {
-    color: $color-base;
+    color: white;
 }
-
-// .items-link:hover {
-//     color: $color-base;
-//     font-size: 2.8em;
-// }
 
 .imagen:hover {
     transform: scale(1.04);
@@ -25,18 +28,21 @@
 }
 
 .btn:hover {
-    background-color: black;
-    border: none;
+    background-color: $color-base-2;
     transition: all .3s ease-in-out;
     color: white;
 }
 
 .items:hover {
     animation: wiggle 2s linear infinite;
-    background-color: black;
-    color: $color-base;
-    font-size: 1.1em;
-    
+    background-size: cover;
+    border: 1px solid $color-base-2;
+
+    .items-link {
+        transition: all .3s ease-in-out;
+        color: $color-base-2;
+        font-size: 2.5em;
+    }
 }
 
 @keyframes wiggle {
@@ -66,7 +72,7 @@
         transform: rotateZ(-4deg);
     }
 
-    40%,
+    40%, 
     100% {
         transform: rotateZ(0);
     }
