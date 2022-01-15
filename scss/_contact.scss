@@ -1,0 +1,25 @@
+.form_contact {
+    border-radius: 10px;
+    padding: 3em;
+    margin: auto;
+    width: 70%;
+    border: 1px solid $color-base-2;
+    @include gradiente;
+    
+}
+
+.form-control {
+    border: 1px solid $color-base-2;
+    margin: 1em;
+}
+
+.btn {
+    color: black;
+    background-color: $color-base;
+    border: 1px solid $color-base-2;
+    text-align: right;
+}
+
+.submit {
+    text-align: right;
+}
