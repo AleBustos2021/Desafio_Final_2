@@ -2,7 +2,7 @@
     border-radius: 10px;
     padding: 3em;
     margin: auto;
-    width: 70%;
+    width: 60%;
     border: 1px solid $color-base-2;
     @include gradiente;
     
@@ -15,9 +15,12 @@
 
 .btn {
     color: black;
+    font-size: 30px;
     background-color: $color-base;
     border: 1px solid $color-base-2;
-    text-align: right;
+    text-align: center;
+    width: 150px;
+    height: 60px;
 }
 
 .submit {

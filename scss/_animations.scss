@@ -9,18 +9,19 @@
 
 #barra-footer {
     .item-menu:hover {
-    color: $color-base;
+    color: white;
     }
 }
 
 #barra-sup {
     .item-menu:hover {
-    color: $color-base;}
-}
-
-.item-menu:hover {
     color: white;
 }
+}
+
+// .item-menu:hover {
+//     color: white;
+// }
 
 .imagen:hover {
     transform: scale(1.04);
@@ -34,13 +35,13 @@
 }
 
 .items:hover {
-    animation: wiggle 2s linear infinite;
-    background-size: cover;
-    border: 1px solid $color-base-2;
+    // animation: wiggle 2s linear infinite;
+    // background-size: cover;
+
 
     .items-link {
         transition: all .3s ease-in-out;
-        color: $color-base-2;
+        color: $color-base;
         font-size: 2.5em;
     }
 }
