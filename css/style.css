@@ -7,10 +7,6 @@
   border: 1px solid #75e3e7;
 }
 
-#barra-footer .item-menu:hover {
-  color: white;
-}
-
 #barra-sup .item-menu:hover {
   color: white;
 }
@@ -60,15 +56,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #barra-sup, #barra-footer {
   background-color: #0e0a0c;
   font-size: 2em;
-}
-#barra-sup .item-menu, #barra-footer .item-menu {
-  color: #75e3e7;
 }
 
 #barra-sup {
@@ -77,6 +70,7 @@
 
 #barra-footer {
   border-top: 2px solid #75e3e7;
+  color: white;
 }
 
 body {

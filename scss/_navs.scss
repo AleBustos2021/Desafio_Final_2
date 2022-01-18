@@ -2,16 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #barra-sup, #barra-footer {
     background-color: $color-base-2;
     font-size: 2em;
-
-    .item-menu {
-        color: $color-base;
-    }
 }
 
 #barra-sup {
@@ -20,5 +16,6 @@
 
 #barra-footer {
     border-top: 2px solid $color-base;
+    color: white;
 }
 
