@@ -31,6 +31,9 @@
     animation: wiggle 2s linear infinite;
     background-size: cover;
 }
+.link-int:hover{
+    color: $color-base-2;
+}
 
 @keyframes wiggle {
 

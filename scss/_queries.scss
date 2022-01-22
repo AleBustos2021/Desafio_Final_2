@@ -29,6 +29,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-size: 1em;
     }
 
     .container {
@@ -66,4 +67,10 @@
     .separador-color {
         height: 8em;
     }
+    .form_contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
 }
